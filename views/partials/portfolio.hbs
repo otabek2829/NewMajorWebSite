@@ -1,0 +1,60 @@
+<div id="portfolio">
+    {{> Header/navbar}}
+
+    {{!-- HEADER STARTING --}}
+    <header>
+        {{> Header/navbar-menu}}
+        <div class="header-title">
+            <div class="Ellipse1"></div>
+            <div class="Ellipse2"></div>
+            <h1 id="header-title">портфолио</h1>
+            <p>Цена забвается - качество остается</p>
+        </div>
+    </header>
+
+    {{!-- SECTION STARTING --}}
+    <section>
+        <div class="portfolio-cards">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center ">
+                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
+                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
+                        <a href="#">www.mallitall.uz</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
+                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
+                        <a href="#">www.mallitall.uz</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
+                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
+                        <a href="#">www.mallitall.uz</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
+                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
+                        <a href="#">www.mallitall.uz</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
+                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
+                        <a href="#">www.mallitall.uz</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
+                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
+                        <a href="#">www.mallitall.uz</a>
+                    </div>
+                </div>
+            </div>
+            <span class="allPortlioLink">
+                <a  href="#">Ещё работы </a>
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            </span>
+        </div>
+
+        {{!-- Send message --}}
+        {{> Section/Page/sendMessage}}
+        
+    </section>
+
+    {{!-- Footer Page Starting --}}
+    {{> Footer/footer}}
+
+</div>

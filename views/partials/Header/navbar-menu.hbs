@@ -1,0 +1,45 @@
+<div class="sendResumeScreen">
+  <div class="container">
+    <div class="row justify-content-center align-items-center ">
+      <div class="col-12 col-lg-10 col-xl-8 wrapper">
+        <div class="close-btn"><i onclick="sendMessageScreenHide()" class="bi bi-x-circle-fill"></i></div>
+        <h1 class="title">Оставьте резюме</h1>
+        <form method="post">
+          <div class="row justify-content-between align-items-start">
+            <div class="col-10 m-auto m-sm-inherit col-sm-6">
+              <label for="">Ваше имя</label> <br>
+              <input type="text" name="" id="">
+              <label for="">Номер телефона</label> <br>
+              <input type="text" name="" id="" placeholder="+998">
+            </div>
+            <div class="col-10 m-auto m-sm-inherit col-sm-6">
+              <label for="">Претендуемая должность</label> <br>
+              <div class="dropdown-page">
+                <input type="text" class="select-box" name="" id="" placeholder="Выберите" readonly>
+                <div class="option">
+                  <div onclick="show('Маркетолог')">Маркетолог</div>
+                  <div onclick="show('Веб-разработчик')">Веб-разработчик</div>
+                  <div onclick="show('Веб-дизайнер')">Веб-дизайнер</div>
+                  <div onclick="show('Графический дизайнер')">Графический дизайнер</div>
+                  <div onclick="show('SMM менеджер')">SMM менеджер</div>
+                  <div onclick="show('Другое')">Другое</div>
+                </div>
+              </div>
+
+              <label for="">Ссылка на резюме</label> <br>
+              <input type="text" name="" id="">
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit">Оставить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{! FIXED Button }}
+<div onclick="sendMessageScreenShow()" id="sendMessageBtn" class="center fixed-button">
+  Оставить заявку
+</div>

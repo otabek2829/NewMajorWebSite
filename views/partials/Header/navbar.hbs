@@ -1,0 +1,103 @@
+<div class="navbars">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-12 col-lg-5 col-xl-6 logo">
+        <p>
+          <a href="/"><img class="img-fluid" src="/images/Logo/Group 18.png" alt="" /></a>
+        </p>
+        <div class="clock d-none d-lg-block">
+          <i class="bi bi-clock-fill"></i> Пн-Сб 9:00-17:00
+        </div>
+        <div class="d-block d-lg-none" id="navBtnMenu" onclick="burgerBtn()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div
+        class=" col-5 text-right col-lg-7 col-xl-6 d-none d-lg-flex justify-content-between col-6 align-items-center telephone">
+        <p>
+          <i class="bi bi-telephone-fill"></i>
+          <a href="tel:+998942122829">+99877 010 80 00</a>
+        </p>
+        <button id="sendMessageBtn" onclick="sendMessageScreenShow()">Оставить заявку</button>
+      </div>
+
+
+    </div>
+  </div>
+  {{!-- Navbar menu --}}
+  <div class="container-fluid navbarMenuWrapper d-flex justify-content-center">
+    <div class="navs">
+      <ul class="navs-items">
+        <li><a href="/">Главная</a></li>
+        <li><a class="d-inline-flex" href="/o-company"> <span class="mx-1">O</span> нас</a></li>
+        <li class="uslugi_menu_link"><a disabled>Услуги </a> <i class="bi bi-caret-down-fill"></i> </li>
+        <li><a href="/price">Цены</a></li>
+        <li><a href="/portfolio">Портфолио</a></li>
+        <li><a href="/otziv">Отзывы</a></li>
+        <li><a href="/vakansiya">Вакансии</a></li>
+        <li><a href="/contact">Контакты</a></li>
+      </ul>
+      <div id="uslugi-menu">
+        <div class="container">
+          <div class="row justify-content-start justify-sm-content-between align-items-start">
+            <div class="col-10 col-sm-5 col-lg-3">
+              <h4>Веб-разработка</h4>
+              <ul>
+                <li><a href="#">Сайт-визитка</a></li>
+                <li><a href="#">Landing page</a></li>
+                <li><a href="#">Корпоративные сайты</a></li>
+                <li><a href="#">Сайт-каталог</a></li>
+                <li><a href="#">Интернет-магазины</a></li>
+              </ul>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-3">
+              <h4>Дизайн</h4>
+              <ul>
+                <li><a href="#">Оформление соц. сетей</a></li>
+                <li><a href="#">Разработка логотипа</a></li>
+                <li><a href="#">Разработка фирм. стиля</a></li>
+                <li><a href="#">Рекламные баннера</a></li>
+              </ul>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-3">
+              <h4>SMM</h4>
+              <ul>
+                <li><a href="#">Маркетинг. стратегия</a></li>
+                <li><a href="#">Таргетированная реклама</a></li>
+                <li><a href="#">Копирайтинг</a></li>
+                <li><a href="#">Комплекс продвижения</a></li>
+              </ul>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-3">
+              <h4>Тех. поддержка</h4>
+              <ul>
+                <li><a href="#">Интернет-магазин 212</a></li>
+                <li><a href="#">SEO 3</a></li>
+                <li><a href="#">Настройки Яндекс. Директ</a></li>
+                <li><a href="#">Интернет-консалтинг</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- Bottom page --}}
+  {{!-- Ekran 991 dan kichkina bo'lganda chiqadi --}}
+  <div class="bottom-page">
+    <div class="col-12">
+      <div class="row justify-content-around align-items-center">
+        <div class="col-5 col-sm-6 clock">
+          <i class="bi bi-clock-fill"></i> Пн-Сб 9:00-17:00
+        </div>
+        <div class="col-7 col-sm-5 col-md-auto ">
+          <button id="sendMessageBtn" onclick="sendMessageScreenShow()">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

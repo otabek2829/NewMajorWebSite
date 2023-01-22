@@ -1,0 +1,109 @@
+/* O-company css Starting */
+@import url("/stylesheets/Header/o-company.css");
+
+/* Price css Starting */
+@import url("/stylesheets/Header/price.css");
+
+/* Portfolio css Starting */
+@import url("/stylesheets/Header/portfolio.css");
+
+/* Otziv css Starting */
+@import url("/stylesheets/Header/otziv.css");
+
+/* contact css Starting */
+@import url("/stylesheets/Header/contact.css");
+
+/* vakansiya css Starting */
+@import url("/stylesheets/Header/vakansiya.css");
+
+.header-title {
+    margin: 264px  0 0 0;
+    text-align: center;
+}
+
+#header-title{
+    font-family: 'BOWLER';
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 110.857px;
+    line-height: 98%;
+}
+
+#header {
+    padding-bottom: 90px;
+    background-image: url("/images/Header Background/Rectangle 34.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+}
+
+.Ellipse1 {
+    position: absolute;
+    width: 404px;
+    height: 343px;
+    left: -85px;
+    top: 282px;
+    background: rgba(226, 5, 20, 0.4);
+    opacity: 0.9;
+    filter: blur(75px);
+}
+
+.Ellipse2 {
+    position: absolute;
+    width: 374px;
+    height: 388px;
+    left: 43px;
+    top: 124px;
+    background: rgba(251, 251, 251, 0.4);
+    filter: blur(75px);
+}
+
+/* HEADER TITLE CSS STARTING */
+
+#header .header-title {
+    margin-top: 70px;
+}
+
+#header .header-title h1 {
+    font-size: 110.857px;
+    line-height: 98%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'BOWLER', serif !important;
+}
+
+#header .header-title p {
+    max-width: 90%;
+    text-align: start;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 120.5%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Cedra', serif !important;
+}
+
+#header .header-title button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#header .header-title button a {
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Cedra', serif !important;
+}

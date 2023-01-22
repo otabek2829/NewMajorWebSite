@@ -1,0 +1,61 @@
+section .portfolio-cards {
+    padding: 25px 0 124px 0;
+}
+
+section .portfolio-cards .box {
+    text-align: center;
+}
+
+/* Hover */
+section .portfolio-cards .box img {
+    transition: all 300ms ease-out;
+}
+
+section .portfolio-cards .box a {
+    display: block;
+    text-decoration: none;
+    max-width: 440px;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #E20514, #876c6c) 10;
+    border-radius: 0px;
+    padding: 20px 144px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Cedra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FBFBFB;
+    transition: all 400ms ease-out;
+}
+
+section .portfolio-cards .box a:hover {
+    background-color: #E20514;
+}
+
+section .portfolio-cards .allPortlioLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+section .portfolio-cards .allPortlioLink a{
+    font-family: 'Cedra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FBFBFB;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+
+section .portfolio-cards .allPortlioLink i {
+    margin-left: 15px;
+    color: #fff;
+    font-size: 25px;
+}
+section .portfolio-cards .allPortlioLink a:hover{
+    color: #E20514;
+}

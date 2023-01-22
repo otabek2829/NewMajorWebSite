@@ -1,0 +1,22 @@
+#price header {
+    padding: 200px 0 100px 0;
+}
+
+#price .Ellipse1{
+    z-index: 4545;
+}
+#price header .header-title {
+    margin: 100px 0 0 0;
+}
+#price header #header-title {
+    line-height: 120%;
+}
+
+#price header .header-title p {
+    font-family: 'Cedra';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 45px;
+}

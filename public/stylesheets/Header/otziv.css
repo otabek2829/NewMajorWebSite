@@ -1,0 +1,57 @@
+#otziv header {
+    padding: 155px 0 100px 0;
+}
+
+#otziv header .header-title{
+    margin: 76px 0 76px 0;
+}
+#otziv header h1 {
+    text-align: center;
+    font-family: 'BOWLER';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+#otziv .otziv-cards .box {
+    text-align: center;
+    z-index: 999;
+}
+
+#otziv .otziv-cards .box i{
+    margin-left: 12px;
+}
+#otziv .otziv-cards .box p {
+    padding: 19px 137px;
+    font-family: 'Cedra';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+    backdrop-filter: blur(20px);
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #E20514, #876c6c) 10;
+    display: inline-block;
+    border-radius: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease;
+}
+#otziv .otziv-cards .box p:hover{
+    background-color: #E20514;
+}
+
+#otziv .otziv-cards .splide__track{
+    padding-top: 50px;
+}
+#otziv .otziv-cards .box img{
+    transition: all 500ms ease;
+    margin: auto;
+}
+.scaleImg{
+    transform: scale(1.5);
+}

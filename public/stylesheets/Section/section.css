@@ -1,0 +1,378 @@
+/* O Company Css Starting */
+@import url("/stylesheets/Section/o-company.css");
+
+/* Price Css Starting */
+@import url("/stylesheets/Section/price.css");
+
+/* portfolio Css Starting */
+@import url("/stylesheets/Section/portfolio.css");
+
+/* vakansiya Css Starting */
+@import url("/stylesheets/Section/vakansiya.css");
+
+
+
+section {
+    background-color: #000;
+}
+
+.title-page {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-transform: uppercase;  
+    font-family: 'BOWLER', serif;
+}
+.owl-carousel .owl-item img{
+    width: inherit !important;
+    height: auto;
+}
+
+
+/* ================================== КОМПЛЕКС УСЛУГ ================================== */
+
+section .uslugi-page .container{
+    position: relative;
+}
+.Ellipse20 {
+    position: absolute;
+    width: 1093px;
+    height: 914px;
+    right: 0;
+    top: -151px;
+    background: #FBFBFB;
+    opacity: 0.05;
+    filter: blur(125px);
+}
+
+.Ellipse21 {
+    position: absolute;
+    width: 931px;
+    height: 903px;
+    left: -436px;
+    top: 1178px;
+    background: #E20514;
+    opacity: 0.1;
+    filter: blur(100px);
+}
+
+section .uslugi-page .box {
+    margin-bottom: 60px;
+}
+
+section .uslugi-page .box h2 {
+    max-width: 440px;
+    letter-spacing: -1.6px;
+    margin-bottom: 20px;
+    color: #FBFBFB;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    font-family: 'Cedra', serif;
+}
+
+section .uslugi-page .box p {
+    max-width: 557px;
+    margin-bottom: 35px;
+    color: #FBFBFB;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Cedra', serif;
+    
+}
+
+section .uslugi-page .box .price {
+    max-width: 322px;
+}
+
+section .uslugi-page .box .price ul {
+    padding: 0;
+}
+
+section .uslugi-page .box .price ul li {
+    font-family: 'Cedra', serif;
+    position: relative;
+    color: #FBFBFB;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    padding: 13px 23px;
+    background: #272727;
+    opacity: 0.5;
+    border: 1px solid #FBFBFB;
+    backdrop-filter: blur(2px);
+    transition: 500ms ease;
+    z-index: 55;
+}
+
+section .uslugi-page .box .price ul li span {
+    font-family: 'Cedra', serif;
+    position: absolute;
+    top: 10px;
+    right: -220px;
+    opacity: 0;
+    transition: all 300ms ease;
+    color: #FBFBFB;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+section .uslugi-page .box .price ul li:hover {
+    background: #E20514;
+    backdrop-filter: blur(2px);
+    border-color: #E20514;
+    cursor: pointer;
+}
+
+/*================================== ПРЕИМУЩЕСТВА КОМПАНИИ ==================================*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ellipse9 {
+    position: absolute;
+    width: 686px;
+    height: 582px;
+    left: 377px;
+    top: 3477px;
+    background: #E20514;
+    opacity: 0.2;
+    filter: blur(200px);
+}
+
+section .preiumushustva-page {
+    padding-bottom: 330px;
+}
+
+section .preiumushustva-page .box {
+    position: relative;
+    /* width: 244px; */
+    height: 244px;
+}
+
+section .preiumushustva-page .ellipse3,
+section .preiumushustva-page .ellipse2 {
+    position: absolute;
+    width: 244px;
+    height: 244px;
+    border: 1px solid #E20514;
+    border-radius: 50%;
+}
+
+section .preiumushustva-page .ellipse2 {
+    width: 205px;
+    height: 205px;
+    background: rgba(226, 5, 20, 0.1);
+    animation: elipse2 1700ms infinite alternate-reverse ease-in-out;
+}
+
+section .preiumushustva-page .ellipse {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #E20514;
+    cursor: pointer;
+}
+
+section .preiumushustva-page .ellipse span {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'Cedra', serif;
+
+}
+
+section .preiumushustva-page .cards {
+    opacity: 0;
+    position: absolute;
+    width: 445px;
+    bottom: -240px;
+    left: -6px;
+    padding: 13px 45px 14px 44px;
+    border: 1px solid rgba(226, 5, 20, 1);
+    border-radius: 10px;
+    background: rgba(1, 1, 1, 0.8);
+    box-shadow: 1px 1px 15px #E20514;
+    transition: all 150ms;
+}
+
+section .preiumushustva-page .cards img{
+    position: absolute;
+    top: -47px;
+    left: 50%;
+}
+section .preiumushustva-page p {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Cedra', serif;
+
+}
+
+@keyframes elipse2 {
+    0% {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #e20514b9;
+    }
+
+    50% {
+        border: 1px solid #e2051471;
+    }
+
+    100% {
+        width: 233px;
+        height: 233px;
+        border: 1px solid #e2051413;
+    }
+}
+
+
+/* ================================== НАШИ КЛИЕНТЫ ================================== */
+.nashi-klient {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.nashi-klient .image {
+    max-width: 323px;
+    height: 143px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 12px;
+}
+
+.nashi-klient .splide__arrows {
+    position: absolute;
+    top: -60px;
+    right: 120px;
+}
+
+.nashi-klient .splide__arrow--prev,
+.nashi-klient .splide__arrow--next {
+    position: absolute;
+    top: 0;
+    border-radius: 0;
+    border: 1px solid #E20514;
+    background: transparent;
+    width: 31px;
+    height: 31px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.nashi-klient .splide__arrow--next {
+    right: -50px;
+}
+
+.nashi-klient .splide__arrow--prev {
+    left: -20px;
+}
+
+.splide__arrow svg {
+    fill: #E20514 !important;
+}
+
+.nashi-klient .splide__arrow--prev:hover,
+.nashi-klient .splide__arrow--next:hover {
+    width: 38px;
+    height: 38px;
+}
+
+.nashi-klient .splide__arrow--next:hover {
+    left: 15px;
+}
+
+.nashi-klient .splide__arrow--prev:hover {
+    left: -23px;
+}
+
+/*==================================  SEND MESSAGE ==================================  */
+
+.sendMessage {
+    padding-bottom: 90px;
+    position: relative;
+}
+.Ellipse22 {
+    position: absolute;
+    width: 675px;
+    height: 585px;
+    left: -169px;
+    top: -134px;
+    background: #FBFBFB;
+    opacity: 0.2;
+    filter: blur(125px);
+}
+
+
+.sendMessage .wrapper {
+    width: 100%;
+    background: rgba(1, 1, 1, 0.4);
+    border: 1px solid #FBFBFB;
+    backdrop-filter: blur(2px);
+    padding: 68px 0px 53px 0px;
+    text-align: center;
+}
+
+.sendMessage .wrapper h3 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 98%;
+    margin-bottom: 20px;
+    font-family: 'Cedra', serif;
+}
+
+.sendMessage .wrapper p {
+    font-family: 'Cedra', serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.sendMessage .wrapper form {
+    max-width: 440px;
+}
+
+.sendMessage .wrapper form input {
+    font-family: 'Cedra', serif;
+    width: 100%;
+    background: #272727;
+    border-radius: 10px;
+    padding: 17px 0 19px 33px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.sendMessage .wrapper form input::placeholder{
+    color: #fff;
+}
+
+.sendMessage .wrapper form button {
+    font-family: 'Cedra', serif;
+    background: #E20514;
+    border-radius: 10px;
+    padding: 18px 134px;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+
+}

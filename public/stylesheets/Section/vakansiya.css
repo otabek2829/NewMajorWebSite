@@ -1,0 +1,77 @@
+#vakansiya section .vakansiya-item {
+    padding: 100px 30px;
+}
+
+#vakansiya section .vakansiya-item .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 1115px;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #E20514, #876c6c) 10;
+    border-radius: 0px;
+    padding: 60px 87px;
+    
+}
+
+#vakansiya section .vakansiya-item .box h2 {
+    font-family: 'Cedra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 98%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: start;
+}
+
+#vakansiya section .vakansiya-item .box ul {
+    padding: 0;
+    margin: 0;
+}
+
+#vakansiya section .vakansiya-item .box ul li {
+    margin-left: 30px;
+}
+
+#vakansiya section .vakansiya-item .box span,
+#vakansiya section .vakansiya-item .box ul li {
+    font-family: 'Cedra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: #FFFFFF;
+    list-style-type: disc;
+}
+
+#vakansiya section .vakansiya-item .box span {
+    text-align: start;
+    font-size: 20px;
+}
+
+#vakansiya section .vakansiya-item .box button {
+    background-color: transparent;
+    color: #FFFFFF;
+    transition: all 500ms ease;
+    border: 1px solid #FBFBFB;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#vakansiya section .vakansiya-item .box button:hover {
+    background-color: #e20514;
+    border-color: #E20514;
+}
+
+/* #vakansiya section .vakansiya-item .developer ul li {
+    margin-bottom: 20px;
+}
+
+#vakansiya section .vakansiya-item .marketolog ul li {
+    margin-bottom: 0px;
+}
+
+#vakansiya section .vakansiya-item .copywriter ul li {
+    margin-bottom: 0px;
+} */

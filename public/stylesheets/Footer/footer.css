@@ -1,0 +1,82 @@
+footer {
+    position: relative;
+}
+
+footer .footer-bg {
+    padding: 45px 0;
+    background: rgba(1, 1, 1, .6);
+    backdrop-filter: blur(2px);
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg,
+            rgba(226, 5, 20, 0),
+            rgba(226, 5, 20, 1),
+            rgba(226, 5, 20, 0)) 1 0;
+}
+
+footer li {
+    margin-bottom: 20px;
+}
+
+footer li a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 550ms ease-out;
+    font-family: 'Cedra', serif;
+}
+
+footer li:hover a {
+    color: #E20514;
+}
+
+footer .icon-page {
+    margin-top: 25px;
+}
+
+footer .icon-page .tg,
+footer .icon-page .instagram,
+footer .icon-page .facebook {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E20514;
+    padding: 10px;
+    border-radius: 50%;
+    background: #E20514;
+    background: rgba(226, 5, 20, 0.15);
+    margin-right: 21px;
+}
+
+footer .icon-page a {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+}
+
+footer .icon-page a i {
+    font-size: 24px;
+    color: #fff;
+    transition: all 500ms ease;
+}
+
+footer .icon-page i:hover {
+    color: #E20514;
+}
+
+.Ellipse19 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1023px;
+    height: 300px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-60%, 0%);
+    top: -64px;
+    background: rgba(226, 5, 20, 0.3);
+    opacity: 0.9;
+    filter: blur(75px);
+}

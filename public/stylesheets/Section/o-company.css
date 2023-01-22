@@ -1,0 +1,109 @@
+/* Carousel About PAge Starting */
+section .about-page {
+    padding: 100px 0;
+}
+
+section .about-page h1 {
+    margin-bottom: 45px;
+    font-family: 'BOWLER';
+    font-size: 58.8069px;
+    color: #FFFFFF;
+}
+
+section .about-page .splide__arrows {
+    display: none;
+}
+section .about-page .splide__track .splide__list .splide__slide {
+    /* margin: 0 35px; */
+    width: auto !important;
+}
+
+section .about-page .splide__track .splide__list .splide__slide h4 {
+    font-family: 'Cedra';
+    font-size: 30px;
+    color: #FFFFFF;
+    width: auto !important;
+    text-align: center;
+}
+
+/* Carousel About Page Starting */
+section .specialist {
+    padding: 100px 0;
+}
+
+section .specialist h1 {
+    font-family: 'BOWLER';
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+section .specialist p {
+    font-family: 'Cedra';
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+section .specialist .box {
+    text-align: center;
+}
+
+section .specialist .box p {
+    padding: 20px 73px;
+    font-family: 'Cedra';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+    backdrop-filter: blur(20px);
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #E20514, #876c6c) 10;
+    display: inline-block;
+    border-radius: 0px;
+}
+
+/* Nash Uslugi Style Starting  */
+
+section .uslugi {
+    margin-bottom: 100px;
+}
+
+section .uslugi .uslugi-menu {
+    padding: 90px 0;
+    border: 1px solid #FBFBFB;
+    border-left: none;
+    border-right: none;
+}
+
+section .uslugi .uslugi-menu ul {
+    text-align: start;
+    padding: 0;
+    margin: 0;
+}
+
+section .uslugi .uslugi-menu h4 {
+    font-family: 'Cedra';
+    font-size: 22px;
+    line-height: 20px;
+    color: #E20514;
+}
+
+section .uslugi .uslugi-menu ul li a {
+    font-family: 'Cedra';
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    transition: all 500ms ease;
+}
+section .uslugi .uslugi-menu ul li a:hover{
+    color: #E20514;
+}

@@ -1,0 +1,16 @@
+#portfolio header {
+    padding: 155px 0 65px 0;
+}
+#portfolio header .header-title {
+    margin-top: 100px;
+}
+#portfolio header .header-title p {
+    font-family: 'Cedra';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+#portfolio .Ellipse1{
+    z-index: 4545;
+}

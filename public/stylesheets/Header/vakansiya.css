@@ -1,0 +1,26 @@
+#vakansiya header {
+    background: url('/images/Header Background/Rectangle 38.svg') no-repeat center top / cover;
+    padding: 125px 0 190px 0;
+}
+#vakansiya .Ellipse2{
+    left: 530px;
+top: 91px;
+}
+#vakansiya .Ellipse1{
+    left: 229px;
+top: 203px;
+}
+#vakansiya header .header-title{
+    margin-top: 184px;
+}
+#vakansiya header #header-title{
+    font-size: 92px;
+    line-height: 120%;
+} 
+#vakansiya header .header-title p{
+        font-family: 'Cedra';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    color: #FFFFFF;
+}

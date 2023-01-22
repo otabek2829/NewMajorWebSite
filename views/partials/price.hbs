@@ -1,0 +1,163 @@
+<div id="price">
+    {{> Header/navbar}}
+
+    {{!-- HEADER STARTING --}}
+    <header>
+        {{> Header/navbar-menu}}
+        <div class="header-title">
+            <div class="Ellipse1"></div>
+            <div class="Ellipse2"></div>
+            <h1 id="header-title">стоимость <br> наших услуг</h1>
+            <p>Цена забвается - качество остается</p>
+        </div>
+    </header>
+
+    {{!-- SECTION STARTING --}}
+
+    <section>
+        
+        {{!-- Price List Group Items --}}
+        <div class="price-list-group-items">
+            <div class="container">
+                <div class="row flex-column">
+                    <div class="col-12 mb-5 ">
+                        <div class="list-group" id="list-tab" role="tablist">
+
+                            <!-- Button father -->
+
+                            <!-- Разработка сайтов -->
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-toggle="list" href="#list-home" role="tab" aria-controls="home">Веб-разработка</a>
+
+                            <!-- Дизайн -->
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                                href="#list-messages" role="tab" aria-controls="messages">Дизайн</a>
+
+                            <!-- SMM-->
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                                href="#list-settings" role="tab" aria-controls="settings">SMM</a>
+
+                            <!-- Техническая поддержка -->
+                            <a class="list-group-item list-group-item-action" id="list-support-list" data-toggle="list"
+                                href="#list-support" role="tab" aria-controls="support">Техническая поддержка</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12">
+                        <div class="tab-content" id="nav-tabContent">
+
+                            <!-- Button bosilganda u haqida ma\lumot chiqishi -->
+
+                            <!-- Разработка сайтов -->
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list">
+                                {{!-- {{#each dataWebsite}} --}}
+                                <div class="body-items-text">
+                                    <h6>Promo page</h6>
+                                    <h6 class="formatPrice">от <span>6000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6>Сайт визитка</h6>
+                                    <h6 class="formatPrice">от <span>7000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6>Landing page</h6>
+                                    <h6 class="formatPrice">от <span>8000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6>Корпоративный сайт</h6>
+                                    <h6 class="formatPrice">от <span>9000000</span> сум</h6>
+                                </div>
+                                {{!-- {{/each}} --}}
+                            </div>
+
+                            <!-- Дизайн -->
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                aria-labelledby="list-messages-list">
+                                {{!-- {{#each dataSmm}} --}}
+                                <div class="body-items-text">
+                                    <h6>Оформление соц. сетей</h6>
+                                    <h6 class="formatPrice">от <span>2000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6>Разработка логотипа</h6>
+                                    <h6 class="formatPrice">от <span>25000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6>Разработка фирменного стиля</h6>
+                                    <h6 class="formatPrice">от <span>1000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6>Рекламный баннер (3*6м)</h6>
+                                    <h6 class="formatPrice">от <span>2500000</span> сум</h6>
+                                </div>
+                                {{!-- {{/each}} --}}
+                            </div>
+
+                            <!-- SMM -->
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                aria-labelledby="list-settings-list">
+                                {{!-- {{#each dataLogoBanner}} --}}
+                                <div class="body-items-text">
+                                    <h6>Маркетинговая стратегия</h6>
+                                    <h6 class="formatPrice">от <span>2000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6>Таргетированная реклама в соц. сетях </h6>
+                                    <h6 class="formatPrice">от <span>7000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6>Копирайтинг </h6>
+                                    <h6 class="formatPrice">от <span>5000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6>Полный комплекс продвижения </h6>
+                                    <h6 class="formatPrice">от <span>8000000</span> сум</h6>
+                                </div>
+                                {{!-- {{/each}} --}}
+                            </div>
+
+                            <!-- Техническая поддержка -->
+                            <div class="tab-pane fade" id="list-support" role="tabpanel"
+                                aria-labelledby="list-support-list">
+
+                                {{!-- {{#each dataTechSupport}} --}}
+                                <div class="body-items-text">
+                                    <h6> Интернет-магазин 212</h6>
+                                    <h6 class="formatPrice">от <span>2000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6> SEO 3</h6>
+                                    <h6 class="formatPrice">от <span>3000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6> Настройка Яндекс-Директ</h6>
+                                    <h6 class="formatPrice">от <span>5000000</span> сум</h6>
+                                </div>
+                                <div class="body-items-text">
+                                    <h6> Интернет -консалтинг</h6>
+                                    <h6 class="formatPrice">от <span>8000000</span> сум</h6>
+                                </div>
+                                {{!-- {{/each}} --}}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         {{!-- Nash klienti Page --}}
+        {{> Section/Page/nashi-client}}
+
+
+        {{!-- Send message --}}
+        {{> Section/Page/sendMessage}}
+
+    </section>
+
+     {{!-- Footer Page Starting --}}
+    {{> Footer/footer}}
+
+</div>
