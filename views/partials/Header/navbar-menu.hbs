@@ -6,13 +6,13 @@
         <h1 class="title">Оставьте резюме</h1>
         <form method="post">
           <div class="row justify-content-between align-items-start">
-            <div class="col-10 m-auto m-sm-inherit col-sm-6">
+            <div class="col-11 m-auto m-sm-inherit col-sm-6">
               <label for="">Ваше имя</label> <br>
               <input type="text" name="" id="">
               <label for="">Номер телефона</label> <br>
-              <input type="text" name="" id="" placeholder="+998">
+              <input type="text" class="formatMaskNumber" name=""  placeholder="+998">
             </div>
-            <div class="col-10 m-auto m-sm-inherit col-sm-6">
+            <div class="col-11 m-auto m-sm-inherit col-sm-6">
               <label for="">Претендуемая должность</label> <br>
               <div class="dropdown-page">
                 <input type="text" class="select-box" name="" id="" placeholder="Выберите" readonly>
@@ -43,3 +43,4 @@
 <div onclick="sendMessageScreenShow()" id="sendMessageBtn" class="center fixed-button">
   Оставить заявку
 </div>
+{{!-- <script src="/javascripts/iMask.js"></script> --}}

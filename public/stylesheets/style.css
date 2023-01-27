@@ -56,6 +56,10 @@ body {
   color: #fff;
 }
 
+.none {
+  display: none !important;
+}
+
 /* Fixed Button Style */
 .fixed-button {
   position: fixed;
@@ -127,6 +131,12 @@ body {
   line-height: 20px;
   color: #FFFFFF;
   font-family: 'Cedra', serif;
+}
+
+#closeBarsBtn {
+  font-size: 33px;
+  display: inline-block;
+  display: flex;
 }
 
 /* Navbar Menu Style Starting */
@@ -472,10 +482,7 @@ section .news-card .cards .card-text {
     overflow-x: hidden;
   }
 
-  /* Send Message Screnn */
-  .sendResumeScreen .wrapper {
-    margin-top: 335px;
-  }
+
 
   /* Bosh Sahifa */
   #header .header-title p {
@@ -537,11 +544,16 @@ section .news-card .cards .card-text {
   }
 }
 
+@media (max-width:1200px) {
+
+  /* Send Message Screnn */
+  .sendResumeScreen .wrapper {
+    margin-top: 100px;
+  }
+}
+
 /* Min-992 > Max-1199 */
 @media (min-width:992px) and (max-width: 1199px) {
-  .sendResumeScreen .wrapper {
-    margin-top: 325px;
-  }
 
   .Ellipse9 {
     left: 187px;
@@ -642,9 +654,11 @@ section .news-card .cards .card-text {
     height: 0;
     margin: 40px 0;
   }
-  .navbars .logo{
+
+  .navbars .logo {
     align-items: flex-start;
   }
+
   .Ellipse19 {
     width: 740px;
   }
@@ -656,10 +670,6 @@ section .news-card .cards .card-text {
   .fixed-button {
     top: 70%;
     right: -95px;
-  }
-
-  .sendResumeScreen .wrapper {
-    margin-top: 300px;
   }
 
   #sendMessageBtn {
@@ -913,7 +923,6 @@ section .news-card .cards .card-text {
 
   .sendResumeScreen .wrapper {
     padding: 40px 15px;
-    margin-top: 200px;
   }
 
   /* Header */
@@ -1084,9 +1093,15 @@ section .news-card .cards .card-text {
   }
 
   .sendResumeScreen .wrapper {
-    margin-top: 100px;
+    margin-top: 0px;
   }
-
+  .sendResumeScreen .wrapper .close-btn {
+    right: 10px;
+    top: -5px;
+}
+  .sendResumeScreen .wrapper form button {
+    padding: 18px 95px;
+  }
   .navbars {
     overflow-x: hidden;
   }
@@ -1420,7 +1435,15 @@ section .news-card .cards .card-text {
     font-size: 16px;
     height: 50px;
   }
-
+  .sendResumeScreen .wrapper form input {
+    height: 50px;
+  }
+  .sendResumeScreen .wrapper form button {
+    padding: 15px 55px;
+}
+.sendResumeScreen .wrapper .close-btn i {
+  font-size: 29px;
+}
   .navs .navs-items li a {
     font-size: 19px;
   }
@@ -1440,9 +1463,11 @@ section .news-card .cards .card-text {
 
   /* contact */
   .sendResumeScreen .wrapper .title {
-    font-size: 32px;
+    font-size: 30px;
   }
-
+  .sendResumeScreen .wrapper {
+    margin-top: 30px;
+}
   .sendResumeScreen .wrapper .close-btn {
     right: 10px;
     top: 0px;
@@ -1511,9 +1536,10 @@ section .news-card .cards .card-text {
   .navbars {
     overflow: hidden;
   }
+
   .leftNavsMenu {
     left: 9% !important;
-}
+  }
 
   .navbars .bottom-page .clock {
     font-size: 18px;
@@ -1530,8 +1556,9 @@ section .news-card .cards .card-text {
   .uslugiMenuPosition {
     top: 34px !important;
   }
-  #uslugi-menu{
-    display: none!important ; 
+
+  #uslugi-menu {
+    display: none !important;
   }
 
   #sendMessageBtn {

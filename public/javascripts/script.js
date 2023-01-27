@@ -20,6 +20,12 @@ if (!navbar.classList.contains('navBtnMenuActive')) {
 
 
 function burgerBtn() {
+    let bars = document.querySelector('#navBtnMenu i')
+    let barsDivs = document.querySelectorAll('#navBtnMenu div')
+    barsDivs.forEach(e => { e.classList.toggle('none')});
+
+    bars.classList.toggle('bi-x-circle-fill')
+
     navbar.classList.toggle('navBtnMenuActive')
     navs.style.display = 'block'
 
