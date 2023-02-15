@@ -52,94 +52,45 @@
                             <!-- Разработка сайтов -->
                             <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                                 aria-labelledby="list-home-list">
-                                {{!-- {{#each dataWebsite}} --}}
+                                {{#each priceWebData}}
                                 <div class="body-items-text">
-                                    <h6>Promo page</h6>
-                                    <h6 class="formatPrice">от <span>6000000</span> сум</h6>
+                                    <h6>{{this.title}}</h6>
+                                    <h6>от <span class="formatPrice">{{this.price}}</span> сум</h6>
                                 </div>
-                                <div class="body-items-text">
-                                    <h6>Сайт визитка</h6>
-                                    <h6 class="formatPrice">от <span>7000000</span> сум</h6>
-                                </div>
-                                <div class="body-items-text">
-                                    <h6>Landing page</h6>
-                                    <h6 class="formatPrice">от <span>8000000</span> сум</h6>
-                                </div>
-                                <div class="body-items-text">
-                                    <h6>Корпоративный сайт</h6>
-                                    <h6 class="formatPrice">от <span>9000000</span> сум</h6>
-                                </div>
-                                {{!-- {{/each}} --}}
+                                {{/each}}
                             </div>
 
                             <!-- Дизайн -->
                             <div class="tab-pane fade" id="list-messages" role="tabpanel"
                                 aria-labelledby="list-messages-list">
-                                {{!-- {{#each dataSmm}} --}}
+                                 {{#each priceDesignData}}
                                 <div class="body-items-text">
-                                    <h6>Оформление соц. сетей</h6>
-                                    <h6 class="formatPrice">от <span>2000000</span> сум</h6>
+                                    <h6>{{this.title}}</h6>
+                                    <h6>от <span class="formatPrice">{{this.price}}</span> сум</h6>
                                 </div>
-                                <div class="body-items-text">
-                                    <h6>Разработка логотипа</h6>
-                                    <h6 class="formatPrice">от <span>25000000</span> сум</h6>
-                                </div>
-                                <div class="body-items-text">
-                                    <h6>Разработка фирменного стиля</h6>
-                                    <h6 class="formatPrice">от <span>1000000</span> сум</h6>
-                                </div>
-                                <div class="body-items-text">
-                                    <h6>Рекламный баннер (3*6м)</h6>
-                                    <h6 class="formatPrice">от <span>2500000</span> сум</h6>
-                                </div>
-                                {{!-- {{/each}} --}}
+                                {{/each}}
                             </div>
 
                             <!-- SMM -->
                             <div class="tab-pane fade" id="list-settings" role="tabpanel"
                                 aria-labelledby="list-settings-list">
-                                {{!-- {{#each dataLogoBanner}} --}}
+                                {{#each priceSmmData}}
                                 <div class="body-items-text">
-                                    <h6>Маркетинговая стратегия</h6>
-                                    <h6 class="formatPrice">от <span>2000000</span> сум</h6>
+                                    <h6>{{this.title}}</h6>
+                                    <h6 >от <span class="formatPrice">{{this.price}}</span> сум</h6>
                                 </div>
-                                <div class="body-items-text">
-                                    <h6>Таргетированная реклама в соц. сетях </h6>
-                                    <h6 class="formatPrice">от <span>7000000</span> сум</h6>
-                                </div>
-                                <div class="body-items-text">
-                                    <h6>Копирайтинг </h6>
-                                    <h6 class="formatPrice">от <span>5000000</span> сум</h6>
-                                </div>
-                                <div class="body-items-text">
-                                    <h6>Полный комплекс продвижения </h6>
-                                    <h6 class="formatPrice">от <span>8000000</span> сум</h6>
-                                </div>
-                                {{!-- {{/each}} --}}
+                                {{/each}}
                             </div>
 
                             <!-- Техническая поддержка -->
                             <div class="tab-pane fade" id="list-support" role="tabpanel"
                                 aria-labelledby="list-support-list">
-
-                                {{!-- {{#each dataTechSupport}} --}}
+                                {{#each priceTechData}}
                                 <div class="body-items-text">
-                                    <h6> Интернет-магазин 212</h6>
-                                    <h6 class="formatPrice">от <span>2000000</span> сум</h6>
+                                    <h6>{{this.title}}</h6>
+                                    <h6 >от <span class="formatPrice">{{this.price}}</span> сум</h6>
                                 </div>
-                                <div class="body-items-text">
-                                    <h6> SEO 3</h6>
-                                    <h6 class="formatPrice">от <span>3000000</span> сум</h6>
-                                </div>
-                                <div class="body-items-text">
-                                    <h6> Настройка Яндекс-Директ</h6>
-                                    <h6 class="formatPrice">от <span>5000000</span> сум</h6>
-                                </div>
-                                <div class="body-items-text">
-                                    <h6> Интернет -консалтинг</h6>
-                                    <h6 class="formatPrice">от <span>8000000</span> сум</h6>
-                                </div>
-                                {{!-- {{/each}} --}}
+                                {{/each}}
                             </div>
 
                         </div>

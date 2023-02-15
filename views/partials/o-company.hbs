@@ -20,6 +20,7 @@
                 <div>
                     <div class="splide__track">
                         <div class="splide__list owl-carousel ">
+                          
                             <div class="splide__slide">
                                 <h4>Клиентоориентированность</h4>
                             </div>
@@ -58,54 +59,14 @@
                 <div class="owl-nav-wrapper">
                     <div class="splide__track">
                         <div class="splide__list owl-carousel">
+                              {{#each spesialistData}}
                             <div class="splide__slide">
                                 <div class="box">
-                                    <img  class="m-auto"src="/images/Section/чел для сайта 1 (1).png" alt=""> <br>
-                                    <p>Менеджер</p>
+                                    <img  class="m-auto"src="/images/{{this.img}}" alt="{{this._id}}"> <br>
+                                    <p>{{this.professia}}</p>
                                 </div>
                             </div>
-                            <div class="splide__slide">
-                                <div class="box">
-                                    <img  class="m-auto"src="/images/Section/чел для сайта 1 (1).png" alt=""> <br>
-                                    <p>Веб-дизайнер</p>
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="box">
-                                    <img  class="m-auto"src="/images/Section/чел для сайта 1 (1).png" alt=""> <br>
-                                    <p>Графич. дизайнер</p>
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="box">
-                                    <img  class="m-auto"src="/images/Section/чел для сайта 1 (1).png" alt=""> <br>
-                                    <p>Программист</p>
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="box">
-                                    <img  class="m-auto"src="/images/Section/чел для сайта 1 (1).png" alt=""> <br>
-                                    <p>Маркетолог</p>
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="box">
-                                    <img  class="m-auto"src="/images/Section/чел для сайта 1 (1).png" alt=""> <br>
-                                    <p>Видеограф</p>
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="box">
-                                    <img  class="m-auto"src="/images/Section/чел для сайта 1 (1).png" alt=""> <br>
-                                    <p>Мобилограф</p>
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="box">
-                                    <img  class="m-auto"src="/images/Section/чел для сайта 1 (1).png" alt=""> <br>
-                                    <p>Модель для съёмок</p>
-                                </div>
-                            </div>
+                            {{/each }}
                         </div>
                     </div>
                 </div>

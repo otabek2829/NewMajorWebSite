@@ -1,0 +1,31 @@
+{{> Dashboard/Navbar/navbar}}
+
+<div class="otziv">
+    <h1 class="title">{{title}}</h1>
+    <div class="container">
+        <div class="row  justify-content-between align-items-center  p-0">
+             {{#each otziv}}
+            <div class="col-3 box">
+                <img class="img-fluid" src="/images/{{this.img}}" alt="{{this_id}}">
+                <p class="center"><a href="{{this.link}}">Смотреть видеo</a></p>
+                <div class="delete ">
+                    <a href="/dashboard/otziv/delete/{{this._id}}">
+                        <i class="bi bi-trash3"></i>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+            <div class=" p-0 col-3 my-3 text-center send-box">
+                <form action="/dashboard/otziv" method="POST" enctype="multipart/form-data">
+                    <div class="img-page center ">
+                        <h3>341x326</h3>
+                    <input type="file" name="img" title="your text" class="userImage"
+                        accept="image/png, image/jpg, image/jpeg" / required>
+                    </div>
+                    <input type="text" name="link" id="" placeholder="https://web.telegram.org/z/">
+                         <button class=" sendFileButton " type="submit">Send File</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

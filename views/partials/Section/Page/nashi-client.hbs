@@ -6,18 +6,11 @@
         <div >
         <div class="splide__track">
             <div class="splide__list owl-carousel">
+                {{#each nashClientData}}
                     <div class="image center ">
-                        <img class="img-fluid" src="/images/Carousel Img/image 11.png" alt="">
+                    <img class="img-fluid" src="/images/{{this.img}}" alt="{{this._id}}">
                 </div>
-                    <div class="image center ">
-                        <img class="img-fluid" src="/images/Carousel Img/image 6.png" alt="">
-                </div>
-                    <div class="image center ">
-                        <img class="img-fluid" src="/images/Carousel Img/image 8.png" alt="">
-                </div>
-                    <div class="image center ">
-                        <img class="img-fluid" src="/images/Carousel Img/image 9.png" alt="">
-                </div>
+                {{/each}}
             </div>
         </div>
     </div>

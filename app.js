@@ -4,11 +4,26 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const exhbs = require('express-handlebars') 
+const mongoose = require('mongoose')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/dashboard');
 
 var app = express();
+
+mongoose.set('strictQuery', true);
+
+
+// mongoose.connect("mongodb+srv://user:DA52k1FKXRrniWz7@cluster0.iblh6.mongodb.net/MajorMedia");
+mongoose.connect("mongodb+srv://user:DA52k1FKXRrniWz7@cluster0.iblh6.mongodb.net/Web-Major");
+const db = mongoose.connection
+db.on('open', () => {
+  console.log(`MongoDb running`);
+})
+
+db.on('error', (err) => {
+  console.log(`MongoDb ERROR running`, err);
+})
 
 // view engine setup
 const exbs = exhbs.create({

@@ -1,4 +1,23 @@
-<h1>{{message}}</h1>
-<h1>Xatolik Keldi Error page</h1>
-<h2>{{error.status}}</h2>
-<pre>{{error.stack}}</pre>
+<div class="error-page">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-sm-12">
+            <div class="card shadow-lg border-0 rounded-lg mx-auto">
+                {{#if error.status}}
+                <h1 class="card-header display-1 text-muted text-center">
+                    {{error.status}}
+                </h1>
+                {{else}}
+                    <h1 class="card-header display-1 text-muted text-center">
+                    404
+                </h1>
+                {{/if}}
+                <span class="card-subtitle mb-2 text-muted text-center">
+                    {{message}}
+                </span>
+                <div class="card-body mx-auto">
+                    <a type="button" href="/" class="btn btn-sm btn-info text-white"> Back To Home </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

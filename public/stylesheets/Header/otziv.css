@@ -29,7 +29,6 @@
     font-size: 25px;
     line-height: 150%;
     text-align: center;
-    color: #FFFFFF;
     margin-top: 30px;
     backdrop-filter: blur(20px);
     border: 1px solid;
@@ -40,6 +39,12 @@
     align-items: center;
     justify-content: center;
     transition: all 500ms ease;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+#otziv .otziv-cards .box p a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 #otziv .otziv-cards .box p:hover{
     background-color: #E20514;

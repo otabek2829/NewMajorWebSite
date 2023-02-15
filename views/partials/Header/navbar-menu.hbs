@@ -8,14 +8,14 @@
           <div class="row justify-content-between align-items-start">
             <div class="col-11 m-auto m-sm-inherit col-sm-6">
               <label for="">Ваше имя</label> <br>
-              <input type="text" name="" id="">
+              <input type="text" name="" id="" required>
               <label for="">Номер телефона</label> <br>
-              <input type="text" class="formatMaskNumber" name=""  placeholder="+998">
+              <input type="text" class="formatMaskNumber" name=""  placeholder="+998" required>
             </div>
             <div class="col-11 m-auto m-sm-inherit col-sm-6">
               <label for="">Претендуемая должность</label> <br>
               <div class="dropdown-page">
-                <input type="text" class="select-box" name="" id="" placeholder="Выберите" readonly>
+                <input type="text" class="select-box" name="" id="" placeholder="Выберите" readonly required>
                 <div class="option">
                   <div onclick="show('Маркетолог')">Маркетолог</div>
                   <div onclick="show('Веб-разработчик')">Веб-разработчик</div>
@@ -30,7 +30,7 @@
               <input type="text" name="" id="">
             </div>
           </div>
-          <div class="text-center">
+          <div class="text-center mt-3">
             <button type="submit">Оставить заявку</button>
           </div>
         </form>

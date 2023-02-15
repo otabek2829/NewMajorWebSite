@@ -17,30 +17,12 @@
         <div class="portfolio-cards">
             <div class="container-fluid">
                 <div class="row justify-content-between align-items-center ">
+                    {{#each portfolio}}
                     <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
-                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
-                        <a href="#">www.mallitall.uz</a>
+                        <img class="img-fluid" src="/images/{{this.img}}" alt="a"> <br>
+                        <a target="_blank" href="https://{{this.link}}/"" >{{this.link}}</a>
                     </div>
-                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
-                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
-                        <a href="#">www.mallitall.uz</a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
-                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
-                        <a href="#">www.mallitall.uz</a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
-                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
-                        <a href="#">www.mallitall.uz</a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
-                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
-                        <a href="#">www.mallitall.uz</a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-xl-4 box my-3 my-sm-5">
-                        <img class="img-fluid" src="/images/Section/Rectangle 65.png" alt="a"> <br>
-                        <a href="#">www.mallitall.uz</a>
-                    </div>
+                    {{/each}}
                 </div>
             </div>
             <span class="allPortlioLink">

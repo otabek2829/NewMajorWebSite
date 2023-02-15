@@ -18,7 +18,7 @@ section .portfolio-cards .box a {
     border: 1px solid;
     border-image: linear-gradient(45deg, #E20514, #876c6c) 10;
     border-radius: 0px;
-    padding: 20px 144px;
+    padding: 20px 1px;
     margin: auto;
     margin-top: 50px;
     font-family: 'Cedra';

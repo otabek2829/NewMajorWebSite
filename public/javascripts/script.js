@@ -1,6 +1,21 @@
 let body = document.querySelector('body')
 let windowWidth = window.innerWidth;
 
+
+// Raqamlarni Formatlash uchun 1000000 > 1 000 000
+const priceNumber = document.querySelectorAll('.formatPrice')
+async function formattingNumber(){
+    for(let i = 0 ; i < priceNumber.length; i++){
+        var nums = await Number(priceNumber[i].textContent)
+        priceNumber[i].textContent = nums.toLocaleString('ru-Ru')
+        // Satrni Raqamga aylantirish | matn orasidagi sonlarni tortib olish
+        // Number(priceNumber[i].textContent.replace(/\D/g, "")).toLocaleString('ru-Ru');
+    }
+}
+formattingNumber()
+
+// Navbar ishlari
+
 const bottomPage = document.querySelector('.navbars .bottom-page')
 const btn = document.querySelector('.navbars .bottom-page button')
 const clock = document.querySelector('.navbars .bottom-page .clock')

@@ -1,0 +1,258 @@
+.nashi-client  .title,
+.spesialist .title,
+.otziv  .title,
+.portfolio .title,
+.prise  .title
+ {
+    color: #fff;
+    font-family: 'BOWLER';
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Navbar  */
+.admin-navbar {
+    background-color: #272727;
+}
+
+.admin-navbar .navbar {
+    justify-content: space-between !important;
+    background-color: #272727 !important;
+    padding: 25px 0;
+}
+
+.admin-navbar .navbar-collapse {
+    flex-grow: 0;
+}
+
+.admin-navbar .navbar-collapse .navbar-nav li a {
+    color: #fff;
+    text-transform: capitalize !important;
+    font-family: 'Cedra';
+    font-weight: 400;
+}
+
+
+/* Cards */
+.send-box {
+    text-align: center;
+    border: 1px solid;
+    overflow: hidden !important;
+    border-image: linear-gradient(45deg, #E20514, #876c6c) 10;
+}
+
+.send-box h3 {
+    color: #fff;
+}
+
+.send-box .img-page {
+    position: relative;
+    width: 100%;
+    background-color: #403d3980;
+    margin-bottom: 10px;
+
+}
+
+
+.send-box .userImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(40%, -50%) scale(6.5);
+    z-index: 55;
+    opacity: 0;
+}
+
+.sendFileButton {
+    padding: 12px 26px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #a52a2a;
+    width: 80%;
+    margin: 10px auto;
+    font-family: 'Cedra' !important;
+}
+
+input {
+    font-family: 'Cedra' !important;
+    width: 80%;
+    margin: auto !important;
+    border: 1px solid #d5d7dc;
+    border-radius: 5px !important;
+    color: #2f3a4f;
+    outline: 0;
+    display: block;
+    padding: 13px 15px;
+    line-height: 1 !important;
+    text-decoration: none;
+    background: #fff;
+}
+.box .delete{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.box .delete{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+ .delete i{
+    color: #fff;
+    transition: 500ms ease;
+}
+.box .delete i:hover{
+    cursor: pointer;
+    color: #E20514;
+}
+/* Nashi klient page starting */
+.nashi-client .img-page {
+    position: relative;
+    height: 150px;
+}
+.box{
+    position: relative;
+}
+.nashi-client .box{
+    background-color: #ffffff4d;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: calc(25% - 20px);
+}
+
+
+/* Spesialist page starting */
+
+.spesialist .send-box .img-page {
+    position: relative;
+    height: 300px;
+}
+.spesialist .box {
+    text-align: center;
+    width: calc(33% - 20px);
+}
+.otziv .box p,
+.portfolio .box p,
+.spesialist .box p{
+    padding: 20px 73px;
+    font-family: 'Cedra';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+    backdrop-filter: blur(20px);
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #E20514, #876c6c) 10;
+    display: inline-block;
+    border-radius: 0px;
+}
+
+
+/* Portfolio page starting */
+.portfolio .send-box .img-page {
+    position: relative;
+    height: 300px;
+}
+.portfolio .box {
+    width: calc(25% - 20px) !important;
+}
+.otziv .box p,
+.portfolio .box p{
+    font-size: 18px;
+    width: 100%;
+    padding: 20px 0 ;
+    margin: 10px 0 0;
+    transition: all .5s ease;
+}
+.otziv .box p:hover a,
+.portfolio .box p:hover{
+    color: #E20514;
+}
+.portfolio .box .delete{
+    right: 20px;
+    bottom: 8px;
+}
+
+/* Otziv page starting */
+.otziv .send-box .img-page {
+    position: relative;
+    height: 300px;
+}
+.otziv .box p{
+    position: relative;
+    text-align: center;
+}
+.otziv .box p a{
+    color: #d5d7dc;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+.otziv .box .delete{
+    bottom: 95px;
+    right: 20px;
+}
+
+
+/* PRISE */
+
+.prise .body-items-text{
+    position: relative;
+}
+.prise #control-panel{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.prise #control-panel i {
+    transition: all 500ms ease;
+    color: #d5d7dc;
+}
+.prise #control-panel i:hover{
+    color: #E20514;
+}
+.prise .send-box form{
+    text-align: left;
+    padding: 0 25px 30px 25px;
+}
+.prise .send-box h4{
+    margin-top: 20px;
+    color: #E20514  ;
+    font-family: 'Cedra';
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+}
+.prise .send-box input {
+    font-family: 'Cedra';
+    width: 100%;
+    background: #272727;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    height: 60px;
+    padding: 19px 0 19px 27px;
+    font-size: 16px;
+    color: #FBFBFB;
+    margin: 0 0 20px 0;
+    caret-color: #E20514;
+}
+.prise .send-box label{
+    font-family: 'Cedra';
+    font-size: 16px;
+    line-height: 20px;
+    color: #FBFBFB;
+    margin-bottom: 10px;;
+}
+
+
+
+
+

@@ -13,30 +13,14 @@
                 <div>
                     <div class="splide__track">
                         <div class="splide__list owl-carousel">
+                            {{#each otzivData}}
                             <div class="splide__slide">
                                 <div class="box">
-                                    <img class="img-fluid" src="/images/otziv/Rectangle 75.png" alt=""> <br>
-                                    <p><span>Смотреть видео</span>  <i class="bi bi-caret-right"></i> </p>
+                                    <img class="img-fluid" src="/images/{{this.img}}" alt=""> <br>
+                                    <p><span><a target="_blank"  href="https://{{this.link}}/">Смотреть видео</a> </span>  <i class="bi bi-caret-right"></i> </p>
                                 </div>
                             </div>
-                            <div class="splide__slide">
-                                <div class="box">
-                                    <img class="img-fluid" src="/images/otziv/Rectangle 65.png" alt=""> <br>
-                                    <p><span>Смотреть виде</span>о <i class="bi bi-caret-right"></i> </p>
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="box">
-                                    <img class="img-fluid" src="/images/otziv/Rectangle 75.png" alt=""> <br>
-                                    <p><span>Смотреть виде</span>о <i class="bi bi-caret-right"></i> </p>
-                                </div>
-                            </div>
-                             <div class="splide__slide">
-                                <div class="box">
-                                    <img class="img-fluid" src="/images/otziv/Rectangle 65.png" alt=""> <br>
-                                    <p><span>Смотреть видео</span>  <i class="bi bi-caret-right"></i>  </p>
-                                </div>
-                            </div>
+                            {{/each}}
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,116 @@
+{{> Dashboard/Navbar/navbar}}
+<section>
+    <div class="prise">
+        <h1 class="title mb-5">{{title}}</h1>
+        {{!-- Price List Group Items --}}
+        <div class="price-list-group-items">
+            <div class="container">
+                <div class="row flex-column">
+                    <div class="col-12 mb-5 ">
+                        <div class="list-group" id="list-tab" role="tablist">
+
+                            <!-- Button father -->
+
+                            <!-- Разработка сайтов -->
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-toggle="list" href="/dashboard/price/web-site" role="tab"
+                                aria-controls="home">Веб-разработка</a>
+
+                            <!-- Дизайн -->
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                                href="/dashboard/price/design" role="tab" aria-controls="messages">Дизайн</a>
+
+                            <!-- SMM-->
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                                href="/dashboard/price/smm" role="tab" aria-controls="settings">SMM</a>
+
+                            <!-- Техническая поддержка -->
+                            <a class="list-group-item list-group-item-action" id="list-support-list" data-toggle="list"
+                                href="/dashboard/price/technical-support" role="tab" aria-controls="support">Техническая
+                                поддержка</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12">
+                        <div class="tab-content" id="nav-tabContent">
+
+                            <!-- Button bosilganda u haqida ma\lumot chiqishi -->
+                            <!-- Разработка сайтов -->
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list">
+                                {{#each webData }}
+                                <div class="body-items-text">
+                                    <h6>{{this.title}}</h6>
+                                    <h6 class="formatPrice">от <span>{{this.price}}</span> сум</h6>
+                                    <div id="control-panel">
+                                        <a href="/dashboard/price/web-site/delete/{{this._id}}">
+                                            <i class="bi bi-trash3"></i>
+                                        </a>
+                                        <a href="/dashboard/price/web-site/update/{{this._id}}">
+                                        <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                {{/each }}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row p-0">
+                    <div class=" p-0 col-4 my-3 mx-auto send-box">
+                        <h4>добавить услугу</h4>
+                          {{#if category}}
+                          <form method="POST" >
+                            <label class="mt-4" for="">Название услуги </label>
+                            <input type="text" name="title" id="" value="{{tittle}}"required>
+
+                            <label class="mt-4" for="">Претендуемая должность</label> <br>
+                            <div class="dropdown-page">
+                                <input type="text" class="select-box" name="category" id="" placeholder="Выберите"
+                                    readonly required value="{{category}}">
+                                <div class="option">
+                                    <div onclick="show('Дизайн')">Дизайн</div>
+                                    <div onclick="show('Веб-разработчик')">Веб-разработка</div>
+                                    <div onclick="show('Техническая поддержка')">Техническая поддержка</div>
+                                    <div onclick="show('SMM')">SMM </div>
+                                </div>
+                            </div>
+                            <label class="mt-4" for="">Стоимость услуги</label>
+                            <input type="text" name="price" id="" value="{{price}}" required>
+
+                            <button class="mt-3 center sendFileButton" type="submit">{{button}}</button>
+                        </form>
+                         {{else}} 
+                        <form action="/dashboard/price/web-site" method="POST">
+                            <label class="mt-4" for="">Название услуги </label>
+                            <input type="text" name="title" id="" placeholder="Разработка логотипа" required>
+
+                            <label class="mt-4" for="">Претендуемая должность</label> <br>
+                            <div class="dropdown-page">
+                                <input type="text" class="select-box" name="category" id="" placeholder="Выберите"
+                                    readonly required>
+                                <div class="option">
+                                    <div onclick="show('Дизайн')">Дизайн</div>
+                                    <div onclick="show('Веб-разработчик')">Веб-разработка</div>
+                                    <div onclick="show('Техническая поддержка')">Техническая поддержка</div>
+                                    <div onclick="show('SMM')">SMM </div>
+                                </div>
+                            </div>
+                            <label class="mt-4" for="">Стоимость услуги</label>
+                            <input type="text" name="price" id="" placeholder="1 000 000" required>
+
+                            <button class="mt-3 center sendFileButton" type="submit">Send File</button>
+                        </form>
+                          {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/javascripts/app.js"></script>
